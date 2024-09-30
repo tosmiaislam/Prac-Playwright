@@ -17,11 +17,11 @@ export class DashboardPage {
     }
 
     async openProfileMenu() {
-        await this.page.getByRole('button', { name: 'Profile', exact: true }).click()
+        await this.page.getByRole('button', { name: 'Profile', exact: true }).click();
     }
 
     async clickMyCV() {
-        await this.page.locator('#my-profile-menu').getByRole('link', { name: 'My CV' }).click()
+        await this.page.locator('#my-profile-menu').getByRole('link', { name: 'My CV' }).click();
     }
 
     async clickMyFeed() {
