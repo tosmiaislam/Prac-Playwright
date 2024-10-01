@@ -28,10 +28,10 @@ jobs:
         run: npx playwright install
 
       - name: Run Playwright Tests
-        run: npx playwright test arbree/swag.test.ts
+        run: npx playwright test tests/skillLogin.spec.ts
 
       - name: Run Playwright Tests with xvfb
-        run: xvfb-run npx playwright test arbree/swag.test.ts --headed
+        run: xvfb-run npx playwright test tests/skillLogin.spec.ts --headed
 
       
       
