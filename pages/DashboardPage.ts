@@ -13,7 +13,7 @@ export class DashboardPage {
         await this.page.getByText('38Total Courses').click();
         await this.page.getByText('2Jobs Apply').click();
         await this.page.getByText('16,100Total Jobs').click();
-        await this.page.getByText('Jobs according to skills').click();
+        await this.page.getByText('Jobs according to skills').click()
     }
 
     async openProfileMenu() {
