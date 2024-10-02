@@ -4,10 +4,10 @@ test('test', async ({ page }) => {
   await page.goto('https://devtest.isec.gov.bd/');
   await page.getByRole('link', { name: 'Login' }).click();
   await page.getByTestId('login-page-username-input').click();
-  await page.getByTestId('login-page-username-input').fill('01717482005');
-  await page.getByTestId('login-page-password-input').click();
-  await page.getByTestId('login-page-password-input').fill('ABcd1234');
-  await page.getByTestId('login-page-continue-login-button').click();
+  await page.getByTestId('login-page-username-input').fill('01717482005')
+  await page.getByTestId('login-page-password-input').click()
+  await page.getByTestId('login-page-password-input').fill('ABcd1234')
+  await page.getByTestId('login-page-continue-login-button').click()
   await page.getByText('3Course Enrolled').click();
   await page.getByText('0Gap Matching Courses').click();
   await page.getByText('38Total Courses').click();
