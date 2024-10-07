@@ -10,13 +10,13 @@ export class LoginPage {
         await this.page.goto('https://devtest.isec.gov.bd/');
     }
     async clickLoginLink() {
-        await this.page.getByRole('link', { name: 'Login' }).click()
+        await this.page.getByRole('link', { name: 'Login' }).click();
     }
     async enterUsername(username: string) {
-        await this.page.getByTestId('login-page-username-input').fill(username)
+        await this.page.getByTestId('login-page-username-input').fill(username);
     }
     async enterPassword(password: string) {
-        await this.page.getByTestId('login-page-password-input').fill(password)
+        await this.page.getByTestId('login-page-password-input').fill(password);
     }
 
     async clickLoginButton() {
