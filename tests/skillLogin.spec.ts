@@ -10,7 +10,7 @@ test('User login and interact with skill-based courses and jobs', async ({ page 
     await loginPage.navigateTo();
     await loginPage.clickLoginLink();
     await loginPage.enterUsername('01717482005');
-    await loginPage.enterPassword('ABcd1234')
+    await loginPage.enterPassword('ABcd1234');
     await loginPage.clickLoginButton();
 
     // Navigate through skill-based courses and jobs
